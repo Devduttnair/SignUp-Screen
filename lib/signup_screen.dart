@@ -115,26 +115,23 @@ class _SignUpState extends State<SignUp> {
               top: 520,
               left: 30,
               child:
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              mainAxisAlignment: MainAxisAlignment.end,
+            Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 16),
-                      child: Text('By selecting Agree and Continue below,\n'
-                          'I agree to\n',style: TextStyle(color: Colors.white
-                      ),
-                      ),
-                    ),
-
-                Text('Terms Of Service and Privacy Policy',style: TextStyle(color: Colors.green,fontWeight: FontWeight.bold),)
-                  ],
+                Text('By selecting Agree and Continue below,\n'
+                    'I agree to\n',style: TextStyle(color: Colors.white
                 ),
-    ],
+                ),
+
+
+              ],
             ),
+            ),
+            Positioned(
+                top: 539,
+                left: 95,
+                child: Text('Terms Of Service and Privacy Policy',style: TextStyle(color: Colors.green,fontWeight: FontWeight.bold),)
             ),
 
             Positioned(
